@@ -23,25 +23,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "Is number_students less than or equal to 21?", number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -54,20 +60,37 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+#This will print the evaulation of "is 4 less than 9" to the terminal, this will create a boolean value 
+#of `true` because four is less than nine. This boolean value will be printed to the terminal with the 
+#help of the 'puts' method
+
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+#This will print the evaulation of "is 4 less than the contents of a variable called `books` " to the 
+#terminal, this will create a boolean value of `false` because 4 is not less than the value stored in
+# books (3). This boolean value will be printed to the terminal with the help of the 'puts' method
+
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+#This will print the evaulation of "is the contents of 'friends' greater than the contents of 'sibling'?" 
+#to the terminal, this will create a boolean value of `true` because the value stored in `friends` (6) is
+#greater than the value stored in `siblings` (2). This boolean value will be printed to the terminal with 
+#the help of the 'puts' method
+
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+#This will print the evaulation of "is the contents of 'attendents' Not equal to the contents of 'meal'?" 
+#to the terminal, this will create a boolean value of `true` because the value stored in `attendees` (9) is
+#NOT equal to the value stored in `meals` (8). This boolean value will be printed to the terminal with 
+#the help of the 'puts' method
 
 
 #-------------------
