@@ -23,3 +23,30 @@ Write a program that evaluates the status of the variables above, and uses logic
 ## Spicy
 
 Write a Ruby program that prints out a String or Integer: The printed value will depend on the value of an Integer. If the Integer is a multiple of 3, print "Fizz". If the Integer is a multiple of 5, print "Buzz". If the Integer is a multiple of both 3 and 5, print "FizzBuzz". If the Integer is not a multiple of either, print the Integer itself.
+
+```Ruby
+def solve_spicy(value)
+# Internal FizzBuzz function
+     def do_a_fizzbuzz(num)
+        if num % 3 == 0 && num % 5 == 0
+            puts "FizzBuzz"
+        elsif num % 5 == 0 
+            puts "Buzz"
+        elsif num % 3 == 0 
+            puts "Fizz"
+        else
+            puts num
+        end
+    end  
+
+# Converts Initial input to string for fizzbuzz
+
+    if value.class == String
+        int_value = value.to_i
+        do_a_fizzbuzz(int_value)
+    else
+        do_a_fizzbuzz(value)
+    end 
+    
+end
+```
