@@ -113,16 +113,28 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
+puts loves_to_play && age < 2
 
+
+=begin
+--OR--
+def is_puppy(status)
+   status < 2
+end
+
+puts loves_to_play && is_puppy(age)
+=end
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: The final line evalutes to true. Because the and logical and operator (&&) is checking to see if 
+#both critera evaulte to true `loves to play` is a variable that is assigned the boolean value of `true` and
+#the second condition `age < 2` evaulates to true because age is a varaible that is assigned the value of 1.
